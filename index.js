@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import { queryReducer } from "./app/reducers/reducers.js";
+import thunkMiddleware from "redux-thunk";
+
 var  Main= React.createClass({
 
   render: function() {
