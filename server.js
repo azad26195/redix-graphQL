@@ -127,3 +127,13 @@ var compiler = webpack({
     ]
   }
 });
+
+var app = new WebpackDevServer(compiler, {
+ contentBase: "/public/",
+ proxy: {"/graphql": `http://localhost:${8080}`},
+ publicPath: "/static/",
+ stats: {colors: true}
+});
+app.use("/", express.static("static"));
+app.listen(3000);
+console.log("The App Server is running.")
