@@ -23,6 +23,8 @@ var  Main= React.createClass({
 });
 
 ReactDOM.render(
-  <Main/>,
+  <Provider store={createStoreWithMiddleware(queryReducer)}>
+    <Main />
+  </Provider>,
   document.getElementById("example")
 );
