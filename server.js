@@ -101,3 +101,7 @@ var queryType = new GraphQLObjectType({
 function getGoldberg(id) {
  return goldbergs[id]
 }
+
+var schema = new GraphQLSchema({
+ query: queryType
+});
