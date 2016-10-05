@@ -105,3 +105,8 @@ function getGoldberg(id) {
 var schema = new GraphQLSchema({
  query: queryType
 });
+
+var graphQLServer = express();
+graphQLServer.use('/', graphqlHTTP({ schema: schema, graphiql: true }));
+graphQLServer.listen(8080);
+console.log("The GraphQL Server is running.")
