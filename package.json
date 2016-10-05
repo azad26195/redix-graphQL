@@ -2,7 +2,7 @@
   "name": "react-redux-graphql",
   "version": "1.0.0",
   "description": "getting started with react redux and graphQL",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
