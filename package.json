@@ -1,0 +1,26 @@
+{
+  "name": "react-redux-graphql",
+  "version": "1.0.0",
+  "description": "getting started with react redux and graphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azad26195/redix-graphQL.git"
+  },
+  "author": "Azad Vishwakarma <azad26195@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azad26195/redix-graphQL/issues"
+  },
+  "homepage": "https://github.com/azad26195/redix-graphQL#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-graphql": "^0.5.4",
+    "graphql": "^0.7.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  }
+}
