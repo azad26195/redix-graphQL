@@ -79,3 +79,21 @@ var goldbergType = new GraphQLObjectType({
    }
  }
 });
+
+var queryType = new GraphQLObjectType({
+  name: "query",
+  description: "Goldberg query",
+  fields: {
+    goldberg: {
+      type: goldbergType,
+      args: {
+        id: {
+          type: GraphQLInt
+        }
+      },
+      resolve: function(_, args){
+        return getGoldberg(args.id)
+      }
+    }
+  }
+});
