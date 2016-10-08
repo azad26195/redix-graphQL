@@ -1,1 +1,4 @@
-# redix-graphQL
+# redux-graphQL
+- React
+- Redux
+- GraphQL
